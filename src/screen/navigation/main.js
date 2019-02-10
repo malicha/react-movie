@@ -39,6 +39,12 @@ export default class Main extends Component {
     this.setState({ genres });
   };
 
+  onSearchButtonClick = () => {
+    this.setState({page: 1});
+    this.generateUrl();
+  }
+
+
   onChange = data => {
     this.setState({
       [data.type]: {
@@ -55,6 +61,7 @@ export default class Main extends Component {
           onChange={this.onChange}
           onGenreChange={this.onGenreChange}
           setGenres={this.setGenres}
+          onSearchButtonClick={this.onSearchButtonClick}
           {...this.state}
           />
       </section>

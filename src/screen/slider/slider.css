@@ -10,12 +10,12 @@
 }
 
 .input-range__slinder {
-    background: #e27a3f;
+    background: red;
     border: none;
 }
 
 .input-range__track {
-    background: #e27a3f;
+    background: red;
 }
 
 .input-range__label--value .input-range__label--container {

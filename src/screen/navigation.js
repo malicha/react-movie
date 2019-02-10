@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Selection from '../screen/selection/selection';
 import Slider from './slider/slider';
+import Button from './button/button'
 
 export default class Navigation extends Component {
   componentDidMount() {
@@ -24,7 +25,7 @@ export default class Navigation extends Component {
   };
 
   render() {
-    const { genre, genres, onGenreChange, onChange, year, rating, runtime } = this.props;
+    const { genre, genres, onGenreChange, onChange, year, rating, runtime, onSearchButtonClick } = this.props;
     return (
       <section className="navigation">
       <Selection 
@@ -39,6 +40,8 @@ export default class Navigation extends Component {
       <Slider data={year} onChange={this.onChange} />
       <Slider data={rating} onChange={this.onChange} />
       <Slider data={runtime} onChange={this.onChange} />
+
+      <Button onClick={onSearchButtonClick}/>
 
       </section>  
         

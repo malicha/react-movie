@@ -17,7 +17,7 @@ export default class Movies extends Component {
             this.setState({
                 movies : results
             })
-             console.log(this.state.movies, ">>>ini data")
+             console.log(this.state.movies, ">>>ini data film")
         })
         .catch((err)=>{
             console.log(err);
